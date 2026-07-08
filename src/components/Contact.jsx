@@ -19,7 +19,7 @@ const Contact = () => {
       }
   
       try {
-        const result = await axios.post('http://localhost:5900/contact', objectData);
+        const result = await axios.post('https://pnit-backend.vercel.app/contact', objectData);
         setSendInquiry(true);
         console.log(result)
         alert("Thank you! Your inquiry has been submitted safely to Prestige Nexus Institute of Technology");
