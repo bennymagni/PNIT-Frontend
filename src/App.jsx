@@ -35,7 +35,7 @@ function App() {
 
   const getUserData = async () => {
     try {
-      const result = await axios.get('http://localhost:5900/getuserdata');
+      const result = await axios.get('https://pnit-backend.vercel.app/');
       setUserData(result.data);
       console.log(result.data);
     } catch (error) {
