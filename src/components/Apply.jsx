@@ -27,7 +27,7 @@ const Apply = () => {
     }
 
     try {
-      const result = await axios.post('http://localhost:5900/apply', objectData);
+      const result = await axios.post('https://pnit-backend.vercel.app/apply', objectData);
       setSubmitted(true);
       console.log(result)
     } catch (error) {
