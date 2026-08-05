@@ -229,6 +229,12 @@ body {
   font-size: 0.9rem;
 }
 
+.usefullinks{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu-icon {
   display: none;
   font-size: 1.6rem;
@@ -307,6 +313,18 @@ body {
   }
   .stat-number {
     font-size: 2.2rem;
+  }
+
+  .usefullinks{
+    display: block;
+  }
+
+  .top-banner{
+    display: none;
+  }
+
+  .btn-primary, .btn-secondary{
+    margin-top: 1rem;
   }
 
 }

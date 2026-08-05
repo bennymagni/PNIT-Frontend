@@ -11,7 +11,7 @@ const Footer = () => {
             specialized programs in Cybersecurity, Networking, and Software Development.</p>
         </div>
         <div className="footer-col">
-          <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <div className="usefullinks">
             <h4>Useful Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
