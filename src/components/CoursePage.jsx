@@ -16,10 +16,9 @@ const CoursePage = ({ coursesData, handleCourseDisplay}) => {
           <div className='pnit-page-header' style={{textAlign: 'center'}}>
             <h1> {course?.name} </h1>
           </div>
-          <div style={{display:'flex', paddingLeft:'2.5rem'}}>
+          <div style={{display:'flex', paddingLeft:'2.5rem'}} className='courseText'>
             <div  style={{marginTop: '2rem', marginBottom: '2rem'}} >
-              <img width='640' src={course?.img} alt={`${course?.name} Image`} style={{ borderRadius: '12px'
-              }} />
+              <img width='640' src={course?.img} alt={`${course?.name} Image`} style={{ borderRadius: '12px'}} className='courseImage'/>
             </div>
             <div  style={{margin: '3rem 1.5rem'}}>
               <h3>Course Description</h3>

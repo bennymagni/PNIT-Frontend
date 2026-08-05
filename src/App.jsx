@@ -37,7 +37,6 @@ function App() {
     try {
       const result = await axios.get('https://pnit-backend.vercel.app/getuserdata');
       setUserData(result.data);
-      console.log(result.data);
     } catch (error) {
       console.error(error.message)
     }
@@ -80,7 +79,6 @@ function App() {
     }
     e.preventDefault();
     navigate('/courses', {state: {course: coursesData[index]}});
-    console.log(coursesData[index]);
   }
 
   return (

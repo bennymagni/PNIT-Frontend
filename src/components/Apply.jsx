@@ -29,7 +29,7 @@ const Apply = () => {
     try {
       const result = await axios.post('https://pnit-backend.vercel.app/apply', objectData);
       setSubmitted(true);
-      console.log(result)
+      
     } catch (error) {
       console.error(error.message);
     } finally {
@@ -97,7 +97,7 @@ const Apply = () => {
               <div className="form-section-title" style={{ marginTop: '1.5rem' }}>Program Selection</div>
               <div className="form-group">
                 <label>Select Desired Course</label>
-                <select required defaultValue="" value={course} onChange={(e) => setCourse(e.target.value)}>
+                <select required value={course} onChange={(e) => setCourse(e.target.value)}>
                   <option value="" disabled>-- Select Course --</option>
                   <option value="cybersecurity">Cybersecurity</option>
                   <option value="net&systems">Networking & Systems</option>

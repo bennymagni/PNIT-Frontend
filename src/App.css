@@ -285,7 +285,7 @@ body {
 
   /* When menu state is open, animate height */
   .nav-links.open {
-    max-height: 400px; 
+    max-height: 370px; 
     padding: 15px 0;
   }
 
@@ -327,6 +327,33 @@ body {
     margin-top: 1rem;
   }
 
+  .courseText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0 !important;
+  }
+
+  .courseImage{
+    width: 20rem;
+  }
+
+  .pnit-hero-overlay p{
+    text-align: justify;
+  }
+
+  .table-responsive{
+    font-size: 0.6rem;
+  }
+
+  .form-group input{
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .form-group label{
+    width: 7.4rem;
+  }
 }
 
 /* --- Stats Trust Banner --- */

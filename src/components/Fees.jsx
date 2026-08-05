@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Fees = () => {
   return (
-    <div className="itic-page-container">
+    <div className="pnit-page-container">
       <section className="pnit-page-header text-center">
         <h1>Tuition & Financial Information</h1>
         <p>Transparent pricing schedules designed for institutional sponsorship and private professionals.</p>

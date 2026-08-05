@@ -4,7 +4,7 @@ const About = () => {
     <div className="pnit-page-container">
       {/* Hero Section */}
       <section className="pnit-page-header pnit-hero-banner">
-        <div className="itic-hero-overlay">
+        <div className="pnit-hero-overlay">
           <h1>About Prestige Nexus</h1>
           <p>Prestige Nexus Institute of Technology is dedicated to providing 
              practical IT education, industry-focused training, and career 
