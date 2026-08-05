@@ -229,6 +229,12 @@ body {
   font-size: 0.9rem;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #333;
+} 
 
 
 /* --- Responsive Adjustments --- */
@@ -237,6 +243,72 @@ body {
   .nav-links { margin-top: 20px; padding: 0; }
   .nav-links li { margin: 10px 0; }
   .hero-content h1 { font-size: 2rem; }
+
+ 
+  .banner-flex {
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center;
+    text-align: center;
+    gap: 8px; /* Slightly tighter gap on mobile */
+  }
+  
+  .banner-text {
+    white-space: normal; /* Allows text wrap on very small screens */
+    justify-content: center;
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger icon */
+    color: #0b2545;
+  }
+
+  /* Transform links container into a mobile dropdown dropdown menu */
+  .nav-links {
+    position: absolute;
+    top: 100%; /* Sits directly beneath navbar wrapper */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  /* When menu state is open, animate height */
+  .nav-links.open {
+    max-height: 400px; 
+    padding: 15px 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  /* Adjust apply button constraint for mobile layout */
+  .nav-links .apply-btn {
+    display: inline-block;
+    width: auto;
+    margin: 10px 0;
+  }
+
+  .stats-section {
+    margin-top: 0;
+    padding: 40px 0;
+  }
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
 }
 
 /* --- Stats Trust Banner --- */
@@ -278,16 +350,6 @@ body {
   font-weight: 600;
 }
 
-/* Add a responsive tweak for small screens inside your media query */
-@media (max-width: 768px) {
-  .stats-section {
-    margin-top: 0;
-    padding: 40px 0;
-  }
-  .stat-number {
-    font-size: 2.2rem;
-  }
-}
 
 /* Before other functional components were added*/
 
@@ -377,3 +439,10 @@ input, select, textarea{
 .pnit-card div{
   margin: 0;
 }
+
+
+
+
+
+
+

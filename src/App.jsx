@@ -88,15 +88,15 @@ function App() {
       <Scroll />
       <TopBanner />
       <Navbar />
-        <Routes>
-          <Route path='/' element={<Home coursesData={coursesData} handleCourseDisplay={handleCourseDisplay}/>}></Route>
-          <Route path='/studentData' element={<RegistrationData userData={userData}/>}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/courses' element={<CoursePage coursesData={coursesData} handleCourseDisplay={handleCourseDisplay}/>}></Route>
-          <Route path='/fees' element={<Fees />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-          <Route path='/apply' element={<Apply />}></Route>
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home coursesData={coursesData} handleCourseDisplay={handleCourseDisplay}/>}></Route>
+        <Route path='/studentData' element={<RegistrationData userData={userData}/>}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/courses' element={<CoursePage coursesData={coursesData} handleCourseDisplay={handleCourseDisplay}/>}></Route>
+        <Route path='/fees' element={<Fees />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/apply' element={<Apply />}></Route>
+      </Routes>
       <Footer />
     </div>
   )
