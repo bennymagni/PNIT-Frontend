@@ -61,10 +61,10 @@ const Fees = () => {
 
         <div className="pnit-notice-box" style={{ marginTop: '2.5rem' }}>
           <h4>Important Funding & Payment Notes:</h4>
-          <ul>
-            <li>All fees cover course materials, examinations, certificates, and daily executive refreshments (for in-person tracks).</li>
-            <li>We offer a 10% discount for institutional group bookings consisting of 5 or more candidates.</li>
-            <li>Flexible payment structures are available upon application and administrative review.</li>
+          <ul style={{listStyle:'none'}}>
+            <li style={{padding:'1rem'}}>All fees cover course materials, examinations, certificates, and daily executive refreshments (for in-person tracks).</li>
+            <li style={{padding:'1rem'}}>We offer a 10% discount for institutional group bookings consisting of 5 or more candidates.</li>
+            <li style={{padding:'1rem'}}>Flexible payment structures are available upon application and administrative review.</li>
           </ul>
         </div>
       </section>

@@ -352,7 +352,16 @@ body {
   }
 
   .form-group label{
-    width: 7.4rem;
+    width: 9rem;
+  }
+
+  .form-group select{
+    margin-left: 0;
+  }
+
+  .select-group{
+    display: flex;
+    
   }
 }
 

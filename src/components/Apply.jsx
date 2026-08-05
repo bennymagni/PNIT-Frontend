@@ -95,7 +95,7 @@ const Apply = () => {
               </div>
 
               <div className="form-section-title" style={{ marginTop: '1.5rem' }}>Program Selection</div>
-              <div className="form-group">
+              <div className="form-group select-group">
                 <label>Select Desired Course</label>
                 <select required value={course} onChange={(e) => setCourse(e.target.value)}>
                   <option value="" disabled>-- Select Course --</option>
@@ -110,7 +110,7 @@ const Apply = () => {
 
               <div className="form-group">
                 <div>
-                  <label>Mode of Attendance*</label>
+                    <label>Mode of Attendance*</label>
                     <label style={{ marginRight: '15px', fontWeight: 'normal' }}>
                       <input type="radio" name="mode" checked={studyMode == 'physical'} value="physical" onChange={(e) => setStudyMode(e.target.value)} required style={{ marginRight: '5px' }} /> On-Campus
                     </label>
